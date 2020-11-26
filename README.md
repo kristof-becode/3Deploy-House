@@ -33,7 +33,7 @@ The 9 CHMs for Ghent city centre stitched together:
 ## Packages used
 
 - Numpy: a scientific computation package
-- Pandas: a data analysis and manipulation tool,
+- Pandas: a data analysis/manipulation tool using dataframes
 - Rasterio: GDAL and Numpy-based library to work with geospatial data
 - Shapely: a package for manipulation and analysis of planar geometric objects
 - Plotly: a plotting libary
@@ -53,7 +53,11 @@ The 9 CHMs for Ghent city centre stitched together:
 
 I selected 9 CHM maps to span the area of the city centre of Ghent and I also merged them to make the city aerial view image above, see the 2 corresponding Jupyter notebooks. 
 
-As I reran the code I noticed it needed some extra work to handle non-existing addresses and faulty returns from the API calls so I made sure to implement these changes. Restriction of input addresses to Ghent city centre was also implemented. A simple Flask app was built around the code with HTML and CSS. The 3d plot that is rendered with Plotly is written out as ```div``` section and inserted into an HTML template so it actually renders in the app when deployed to Heroku. The code for the app can be found in the ```plothouse/3dhouse.py```.
+As I reran the code I noticed it needed some extra work to handle non-existing addresses and faulty returns from the API calls so I made sure to implement these changes. Restriction of input addresses to Ghent city centre was also implemented. 
+
+A simple Flask app was built around the code with HTML and CSS. The 3d plot that is rendered with Plotly is written out as ```div``` section and inserted into an HTML template so it actually renders in the app when deployed to Heroku. 
+
+The code for the app can be found in the ```plothouse/3dhouse.py```.
 
 
 
