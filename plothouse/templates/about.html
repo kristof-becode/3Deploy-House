@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+   <div class="content-section">
+    <h3>About</h3>
+    <hr>
+    <p> This app is the deployment of a Python programme that takes an address in Flanders region, Belgium and renders a 3D plot of the corresponding house. Because of space limitations this app is restricted to addresses in the city centre of Ghent and postal code 9000.</p>
+    <p> How does it work?</p>
+    <ol>
+    <li>Retrieve Lambert 72-coordinates of address from API call</li>
+    <li>Select corresponding Canopy Height Model</li>
+    <li>Retrieve house polygon of address from API call</li>
+    <li>Create a mask of the polygon from the Canopy Height Map</li>
+    <li>Estimate dimensions from house polygon</li>
+    <li>Plot a surface map of the house mask</li>
+    </ol>
+    <p> Have fun!</p>
+   </div>
+{% endblock content %}
