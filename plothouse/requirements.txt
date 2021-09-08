@@ -7,4 +7,4 @@ rasterio==1.1.8
 plotly==4.13.0
 Werkzeug==1.0.1
 gunicorn==20.0.4
-Pillow==7.2.0
+Pillow==8.3.2
