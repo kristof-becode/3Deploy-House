@@ -2,7 +2,7 @@ Shapely==1.7.1
 requests==2.25.0
 pandas==1.1.4
 numpy==1.19.4
-Flask==1.1.2
+Flask==2.3.2
 rasterio==1.1.8
 plotly==4.13.0
 Werkzeug==1.0.1
